@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f3e605f4-e97d-4803-bf0d-ee1ec28bdee4" name="Changes" comment="serverSide">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/server/RunServer.java" afterDir="false" />
+    <list default="true" id="f3e605f4-e97d-4803-bf0d-ee1ec28bdee4" name="Changes" comment="initial commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Result.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/ServerSideTransaction.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/TransactionClientRunnable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/ClientHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/WriteXml.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/core.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +39,11 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/PROGRAMING/JAVA/bankAccountServer",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+    "settings.editor.selected.configurable": "vcs.Git"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -110,7 +104,8 @@
       <workItem from="1667155667282" duration="4885000" />
       <workItem from="1667193427973" duration="2995000" />
       <workItem from="1667209039170" duration="8776000" />
-      <workItem from="1667227877733" duration="731000" />
+      <workItem from="1667227877733" duration="1371000" />
+      <workItem from="1667229351054" duration="2725000" />
     </task>
     <task id="LOCAL-00001" summary="serverSide">
       <created>1667137227464</created>
@@ -119,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667137227464</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1667228723619</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667228723619</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="serverSide" />
-    <option name="LAST_COMMIT_MESSAGE" value="serverSide" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>
