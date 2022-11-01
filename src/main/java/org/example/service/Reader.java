@@ -21,12 +21,12 @@ public class Reader {
             JSONObject jsonObject = (JSONObject) parser.parse(new FileReader(path));
             System.out.println("deposits");
             JSONArray subjects = (JSONArray) jsonObject.get("deposits");
-            for (int i = 0; i < subjects.size(); i++) {
+            for (Object subject : subjects) {
                 Deposit deposit = new Deposit();
-                deposit.setCustomer(((JSONObject) subjects.get(i)).get("customer").toString());
-                deposit.setId(Long.parseLong(((JSONObject) subjects.get(i)).get("id").toString()));
-                deposit.setInitialBalance(Integer.parseInt(((JSONObject) subjects.get(i)).get("initialBalance").toString()));
-                deposit.setUpperBound(Integer.parseInt(((JSONObject) subjects.get(i)).get("upperBound").toString()));
+                deposit.setCustomer(((JSONObject) subject).get("customer").toString());
+                deposit.setId(Long.parseLong(((JSONObject) subject).get("id").toString()));
+                deposit.setInitialBalance(Integer.parseInt(((JSONObject) subject).get("initialBalance").toString()));
+                deposit.setUpperBound(Integer.parseInt(((JSONObject) subject).get("upperBound").toString()));
 
                 depositList.add(deposit);
             }
