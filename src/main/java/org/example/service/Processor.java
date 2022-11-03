@@ -1,5 +1,6 @@
 package org.example.service;
 
+import org.apache.log4j.Logger;
 import org.example.exception.LowInitialBalanceException;
 import org.example.exception.UpperBoundException;
 import org.example.model.Deposit;
@@ -9,8 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Processor {
+    private static Logger logger = Logger.getLogger(Processor.class);
     public Transaction process(Transaction transaction) throws LowInitialBalanceException, UpperBoundException {
         Reader reader = new Reader();
+        logger.info("process on transaction with " + transaction.getDepositNumber() + " deposit number is started.");
         List<Deposit> depositList = reader.jsonParser("src\\main\\resources\\core.json");
         Deposit deposit1 = new Deposit();
         for (Deposit deposit : depositList) {
@@ -32,6 +35,8 @@ public class Processor {
                 System.out.println("error");
         }
         transaction.setAccountBalance(newAccountBalance);
+        logger.info("process on transaction with " + transaction.getDepositNumber() + " deposit number is Completed.");
+
         return transaction;
     }
 }

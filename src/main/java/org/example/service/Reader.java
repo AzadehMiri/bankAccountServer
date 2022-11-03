@@ -19,7 +19,6 @@ public class Reader {
 
         try {
             JSONObject jsonObject = (JSONObject) parser.parse(new FileReader(path));
-            System.out.println("deposits");
             JSONArray subjects = (JSONArray) jsonObject.get("deposits");
             for (Object subject : subjects) {
                 Deposit deposit = new Deposit();

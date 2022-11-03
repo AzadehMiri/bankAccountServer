@@ -1,5 +1,7 @@
 package org.example.server;
 
+import org.apache.log4j.Logger;
+import org.example.App;
 import org.example.exception.LowInitialBalanceException;
 import org.example.exception.UpperBoundException;
 import org.example.model.Transaction;
@@ -14,6 +16,7 @@ public class ClientHandler implements Runnable {
     private Socket socket;
     private ObjectOutputStream outputStream;
     private ObjectInputStream inputStream;
+    public static Logger logger = Logger.getLogger(ClientHandler.class);
 
     public ClientHandler(Socket socket) throws IOException {
         this.socket = socket;
@@ -23,26 +26,32 @@ public class ClientHandler implements Runnable {
 
     @Override
     public void run() {
-        while (!socket.isClosed()) {
-
-            Transaction transaction;
+        try {
             Processor processor = new Processor();
-            try {
-                transaction = (Transaction) inputStream.readObject();
-                processor.process(transaction);
-                //transaction.setAccountBalance(100);
-                outputStream.writeObject(transaction);
-                System.out.println(transaction);
 
-            } catch (IOException | ClassNotFoundException | UpperBoundException | LowInitialBalanceException e) {
+            while (!socket.isClosed()) {
+
+                Transaction transaction = (Transaction) inputStream.readObject();
+                logger.info("transaction with "+transaction.getDepositNumber()+" deposit Number received from client");
+                processor.process(transaction);
+                outputStream.writeObject(transaction);
+                logger.info("transaction with "+transaction.getDepositNumber()+" deposit Number sent to client");
+
+            }
+        } catch (IOException e) {
+            System.out.println("connection disconnect");
+            e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
+        } catch ( LowInitialBalanceException | UpperBoundException e) {
+
+        } finally {
+            try {
+                outputStream.close();
+                inputStream.close();
+            } catch (IOException e) {
                 throw new RuntimeException(e);
-            } finally {
-                try {
-                    outputStream.close();
-                    inputStream.close();
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
-                }
+
             }
         }
     }

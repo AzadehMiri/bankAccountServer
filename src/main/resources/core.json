@@ -10,7 +10,7 @@
         {
             "customer": "Reza Rezaei",
             "id": "35527439",
-            "initialBalance": "700",
+            "initialBalance": "7000",
             "upperBound": "10000"
         },
         {
@@ -20,11 +20,12 @@
             "upperBound": "100000"
         },
         {
-            "customer": "mohammad miri",
-            "id": "35527440",
-            "initialBalance": "2000",
-            "upperBound": "10000"
+            "customer": "Azadeh miri",
+            "id": "33227780",
+            "initialBalance": "1000",
+            "upperBound": "100000"
         }
+
     ],
     "outLog": "server.out"
 }

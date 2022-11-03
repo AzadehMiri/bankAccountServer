@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f3e605f4-e97d-4803-bf0d-ee1ec28bdee4" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/src/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/server/RunServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/server/RunServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/Processor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/Processor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/service/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/service/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/core.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/core.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +48,10 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "E:/PROGRAMING/JAVA/bankAccountServer",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "vcs.Git"
+    "settings.editor.selected.configurable": "project.propVCSSupport.Confirmation"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -109,6 +117,13 @@
       <workItem from="1667235014911" duration="933000" />
       <workItem from="1667280785036" duration="80000" />
       <workItem from="1667285009229" duration="66000" />
+      <workItem from="1667285095033" duration="5827000" />
+      <workItem from="1667306799808" duration="4094000" />
+      <workItem from="1667336165514" duration="5997000" />
+      <workItem from="1667372535119" duration="4206000" />
+      <workItem from="1667387183686" duration="2536000" />
+      <workItem from="1667465177129" duration="4125000" />
+      <workItem from="1667469460544" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="serverSide">
       <created>1667137227464</created>
@@ -131,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667232432424</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1667285319639</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667285319639</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,7 +164,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -152,5 +186,10 @@
     <MESSAGE value="serverSide" />
     <MESSAGE value="initial commit" />
     <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bankAccountServer$App.ic" NAME="App Coverage Results" MODIFIED="1667336771650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>
